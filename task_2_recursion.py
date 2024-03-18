@@ -1,5 +1,6 @@
 import turtle
 
+
 def draw_pifagor_tree(branch_len, level):
     if level == 0:
         return
@@ -11,7 +12,10 @@ def draw_pifagor_tree(branch_len, level):
     turtle.right(30)
     turtle.backward(branch_len)
 
+
+recursion_level = int(input("Enter recursion level: "))
+
 turtle.speed(0)
 turtle.left(90)
-draw_pifagor_tree(100, 7)
+draw_pifagor_tree(100, recursion_level)
 turtle.done()
